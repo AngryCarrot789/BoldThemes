@@ -7,6 +7,74 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         Style="{DynamicResource CustomWindowStyle}">
+    <Window.Resources>
+        <Style TargetType="{x:Type ComboBox}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{DynamicResource ComboBox.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ComboBox.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource ComboBox.Static.Foreground}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="Padding" Value="6,2,5,3"/>
+            <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template" Value="{StaticResource ComboBoxTemplate}"/>
+            <Style.Triggers>
+                <Trigger Property="IsEditable" Value="true">
+                    <Setter Property="IsTabStop" Value="false"/>
+                    <Setter Property="Padding" Value="2"/>
+                    <Setter Property="Template" Value="{StaticResource ComboBoxEditableTemplate}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="{DynamicResource TextBox.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource TextBox.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource REghZyBrush.Foreground.Static}"/>
+            <Setter Property="CaretBrush" Value="{DynamicResource REghZyBrush.Glyth.Static}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.Focus.Border}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                        <Condition Property="IsSelectionActive" Value="false"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
     <Grid>
         <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="32"/>
         <ComboBox HorizontalAlignment="Left" Margin="115,10,0,0" VerticalAlignment="Top" Width="200" Height="32">
@@ -16,6 +84,23 @@
             <ComboBoxItem Content="3elo"/>
             <ComboBoxItem Content="4elo"/>
         </ComboBox>
+        <ComboBox IsEditable="True" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="305" Height="32">
+            <ComboBoxItem Content="helo"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3elo"/>
+            <ComboBoxItem Content="4elo"/>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Width="305" Height="20" VerticalContentAlignment="Center"/>
+        <ListBox HorizontalAlignment="Left" Margin="10,109,0,10" Width="305" VerticalContentAlignment="Center">
+            <ListBoxItem Content="Sus xd1"/>
+            <ListBoxItem Content="Sus xd2"/>
+            <ListBoxItem Content="Sus xd3"/>
+            <ListBoxItem Content="Sus xd4"/>
+            <ListBoxItem Content="Sus xd5"/>
+            <ListBoxItem Content="Sus xd6"/>
+            <ListBoxItem Content="Sus xd7"/>
+        </ListBox>
 
     </Grid>
 </Window>

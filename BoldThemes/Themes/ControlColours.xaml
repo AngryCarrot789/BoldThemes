@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <!-- These are what controls in Controls.xaml use. You shouldn't change the name, but changing the value is fine -->
+    <!-- These are what controls in Controls.xaml use. Instead of having say RedBlackTheme stuff in a separate file -->
+    <!-- You could put them all in here (or copy this file and edit) for more customisation (e.g "material design accents" maybe) -->
     
     <SolidColorBrush x:Key="Button.Static.Background"       Color="{DynamicResource REghZyColour.Primary.2.Background.Static}"/>
     <SolidColorBrush x:Key="Button.Static.Border"           Color="{DynamicResource REghZyColour.Primary.2.Border.Static}"/>
@@ -49,13 +50,28 @@
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Border"              Color="{DynamicResource REghZyColour.Primary.2.Border.Selected}"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedHover.Background"     Color="{DynamicResource REghZyColour.Primary.2.Background.Selected}"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedHover.Border"         Color="{DynamicResource REghZyColour.Primary.2.Border.Selected}"/>
-    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background"   Color="{DynamicResource REghZyColour.Primary.2.Background.Selected}"/>
-    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border"       Color="{DynamicResource REghZyColour.Primary.2.Border.Selected}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background"   Color="{DynamicResource REghZyColour.Primary.2.Background.Selected.Inactive}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border"       Color="{DynamicResource REghZyColour.Primary.2.Border.Selected.Inactive}"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewFocus.Border"                 Color="{DynamicResource REghZyColour.Primary.2.Border.Static}"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Background"        Color="{DynamicResource REghZyColour.Primary.2.Background.MouseOver}"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Border"            Color="{DynamicResource REghZyColour.Primary.2.Border.MouseOver}"/>
-    <SolidColorBrush x:Key="TextBox.Static.Background"                          Color="{DynamicResource REghZyColour.Primary.1.Background.MouseOver}"/>
 
+    <SolidColorBrush x:Key="TextBox.Static.Background"                          Color="{DynamicResource REghZyColour.Primary.1.Background.Static}"/>
+    <SolidColorBrush x:Key="TextBox.Static.Border"                              Color="{DynamicResource REghZyColour.Primary.1.Border.Static}"/>
+    <SolidColorBrush x:Key="TextBox.MouseOver.Border"                           Color="{DynamicResource REghZyColour.Primary.1.Border.MouseOver}"/>
+    <SolidColorBrush x:Key="TextBox.Focus.Border"                               Color="{DynamicResource REghZyColour.Primary.1.Border.Selected}"/>
+
+    <SolidColorBrush x:Key="ListBox.Static.Background"                          Color="{DynamicResource REghZyColour.Primary.1.Background.Static}"/>
+    <SolidColorBrush x:Key="ListBox.Static.Border"                              Color="{DynamicResource REghZyColour.Primary.1.Border.Static}"/>
+    <SolidColorBrush x:Key="ListBox.Disabled.Background"                        Color="{DynamicResource REghZyColour.Primary.1.Background.Disabled}"/>
+    <SolidColorBrush x:Key="ListBox.Disabled.Border"                            Color="{DynamicResource REghZyColour.Primary.1.Border.Disabled}"/>
+    <SolidColorBrush x:Key="Item.MouseOver.Background"                          Color="{DynamicResource REghZyColour.Primary.2.Background.MouseOver}"/>
+    <SolidColorBrush x:Key="Item.MouseOver.Border"                              Color="{DynamicResource REghZyColour.Primary.2.Border.MouseOver}"/>
+    <SolidColorBrush x:Key="Item.SelectedInactive.Background"                   Color="{DynamicResource REghZyColour.Primary.2.Background.Selected.Inactive}"/>
+    <SolidColorBrush x:Key="Item.SelectedInactive.Border"                       Color="{DynamicResource REghZyColour.Primary.2.Border.Selected.Inactive}"/>
+    <SolidColorBrush x:Key="Item.SelectedActive.Background"                     Color="{DynamicResource REghZyColour.Primary.2.Background.Selected}"/>
+    <SolidColorBrush x:Key="Item.SelectedActive.Border"                         Color="{DynamicResource REghZyColour.Primary.2.Border.Selected}"/>
+    
     <SolidColorBrush x:Key="Window.Static.Background"           Color="{StaticResource REghZyColour.Deep.1.Background.Static}"/>
     <SolidColorBrush x:Key="Window.Static.Border"               Color="{StaticResource REghZyColour.Deep.2.Border.Static}"/>
     <SolidColorBrush x:Key="Window.Static.Foreground"           Color="{StaticResource REghZyColour.Foreground.Static}"/>
