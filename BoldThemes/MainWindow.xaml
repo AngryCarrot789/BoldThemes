@@ -8,71 +8,148 @@
         Title="MainWindow" Height="532.5" Width="1025"
         Style="{DynamicResource CustomWindowStyle}">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="32"/>
-        <ComboBox HorizontalAlignment="Left" Margin="115,10,0,0" VerticalAlignment="Top" Width="200" Height="32">
-            <ComboBoxItem Content="helo"/>
-            <ComboBoxItem Content="1"/>
-            <ComboBoxItem Content="2"/>
-            <ComboBoxItem Content="3elo"/>
-            <ComboBoxItem Content="4elo"/>
-        </ComboBox>
-        <ComboBox IsEditable="True" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="305" Height="32">
-            <ComboBoxItem Content="helo"/>
-            <ComboBoxItem Content="1"/>
-            <ComboBoxItem Content="2"/>
-            <ComboBoxItem Content="3elo"/>
-            <ComboBoxItem Content="4elo"/>
-        </ComboBox>
-        <TextBox HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Width="305" Height="20" VerticalContentAlignment="Center"/>
-        <ListBox HorizontalAlignment="Left" Margin="10,109,0,10" Width="120" VerticalContentAlignment="Center"
-                 ScrollViewer.VerticalScrollBarVisibility="Visible">
-            <ListBoxItem Content="Sus xd1"/>
-            <ListBoxItem Content="Sus xd2"/>
-            <ListBoxItem Content="Sus xd3"/>
-            <ListBoxItem Content="Sus xd4"/>
-            <ListBoxItem Content="Sus xd5"/>
-            <ListBoxItem Content="Sus xd6"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-            <ListBoxItem Content="Sus xd7"/>
-        </ListBox>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="320,10,0,0" VerticalAlignment="Top" Height="32" Width="80" VerticalContentAlignment="Center"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="320,42,0,0" VerticalAlignment="Top" Width="80" Height="18"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="320,63,0,0" VerticalAlignment="Top" Width="80" Height="18"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="320,86,0,0" VerticalAlignment="Top" Width="80" Height="18"/>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New File" InputGestureText="Ctrl + N"/>
+                <MenuItem Header="Open" InputGestureText="Ctrl + O"/>
+                <MenuItem Header="Save" InputGestureText="Ctrl + S" IsCheckable="True" IsChecked="True"/>
+                <MenuItem Header="Save as..." InputGestureText="Ctrl + Shift + S">
+                    <MenuItem Header="Text File" InputGestureText=".txt"/>
+                    <MenuItem Header="C# Doc" InputGestureText=".cd"/>
+                    <MenuItem Header="C++ File" InputGestureText=".cpp"/>
+                    <MenuItem Header="Header file (c)" InputGestureText=".h"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Margin="0,18,0,0">
+            <GroupBox Header="Sus joke xd" Margin="491,10,337,0" Height="94" VerticalAlignment="Top"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="32"/>
+            <ComboBox HorizontalAlignment="Left" Margin="115,10,0,0" VerticalAlignment="Top" Width="200" Height="32">
+                <ComboBoxItem Content="helo"/>
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3elo"/>
+                <ComboBoxItem Content="4elo"/>
+            </ComboBox>
+            <ComboBox IsEditable="True" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="305" Height="32">
+                <ComboBoxItem Content="helo"/>
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3elo"/>
+                <ComboBoxItem Content="4elo"/>
+            </ComboBox>
+            <TextBox HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Width="305" Height="20" VerticalContentAlignment="Center"/>
+            <ListBox HorizontalAlignment="Left" Margin="10,109,0,10" Width="120" VerticalContentAlignment="Center"
+                ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <ListBoxItem Content="Sus xd1"/>
+                <ListBoxItem Content="Sus xd2"/>
+                <ListBoxItem Content="Sus xd3"/>
+                <ListBoxItem Content="Sus xd4"/>
+                <ListBoxItem Content="Sus xd5"/>
+                <ListBoxItem Content="Sus xd6"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+                <ListBoxItem Content="Sus xd7"/>
+            </ListBox>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="320,10,0,0" VerticalAlignment="Top" Height="32" Width="80" VerticalContentAlignment="Center"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="320,42,0,0" VerticalAlignment="Top" Width="80" Height="18"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="320,63,0,0" VerticalAlignment="Top" Width="80" Height="18"/>
+            <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="320,86,0,0" VerticalAlignment="Top" Width="80" Height="18"/>
 
-        <ScrollViewer HorizontalAlignment="Left" Margin="135,109,0,10" Width="73" VerticalContentAlignment="Center"
-                      VerticalScrollBarVisibility="Visible">
-        </ScrollViewer>
-        <ScrollViewer HorizontalAlignment="Left" Margin="219,109,0,10" Width="166" VerticalContentAlignment="Center"
-            VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="400,10,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="400,29,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="400,47,0,0" VerticalAlignment="Top" Width="86" Height="16"/>
-        <TabControl Margin="390,109,10,10">
-            <TabItem Header="Tab A"/>
-            <TabItem Header="Tab B"/>
-            <TabItem Header="Tab C"/>
-            <TabItem Header="Tab D"/>
-            <TabItem Header="Tab E"/>
-        </TabControl>
+            <ScrollViewer HorizontalAlignment="Left" Margin="135,109,0,10" Width="73" VerticalContentAlignment="Center"
+                VerticalScrollBarVisibility="Visible"/>
+            <ScrollViewer HorizontalAlignment="Left" Margin="219,109,0,10" Width="166" VerticalContentAlignment="Center"
+                VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible"/>
+            <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="400,10,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="400,29,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="400,47,0,0" VerticalAlignment="Top" Width="86" Height="16"/>
+            <TabControl Margin="390,109,10,10">
+                <TabItem Header="Grid Splitter">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="238*"/>
+                            <ColumnDefinition Width="3"/>
+                            <ColumnDefinition Width="367*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button/>
+                        <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                        <Button Grid.Column="2"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Tab B">
+                    <GroupBox Header="Sus joke xd">
+                        <Grid>
+                            <ListView HorizontalAlignment="Left" Height="133" Margin="10,10,0,0" VerticalAlignment="Top" Width="250">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Header="One"/>
+                                        <GridViewColumn Header="Two"/>
+                                        <GridViewColumn Header="Three" Width="100"/>
+                                    </GridView>
+                                </ListView.View>
+                                <ListViewItem Content="sedf"/>
+                                <ListViewItem Content="sedf"/>
+                                <ListViewItem Content="sedf"/>
+                            </ListView>
 
+                            <DataGrid Margin="265,10,0,0">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="First Name"  Binding="{Binding FirstName}"/>
+                                    <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" />
+                                    <DataGridHyperlinkColumn Header="Email" Binding="{Binding Email}"/>
+                                    <DataGridCheckBoxColumn Header="Member?" Binding="{Binding IsMember}" />
+                                    <DataGridComboBoxColumn Header="Order Status"  SelectedItemBinding="{Binding Status}"/>
+                                </DataGrid.Columns>
+                                <ListBoxItem Content="e"/>
+                                <ListBoxItem Content="e"/>
+                                <ListBoxItem Content="e"/>
+                                <ListBoxItem Content="e"/>
+                                <ListBoxItem Content="e"/>
+                            </DataGrid>
+                        </Grid>
+                    </GroupBox>
+                </TabItem>
+                <TabItem Header="Tab C">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="13*"/>
+                            <RowDefinition Height="47*"/>
+                        </Grid.RowDefinitions>
+                        <PasswordBox HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="232"/>
+                        <ProgressBar HorizontalAlignment="Left" Height="21" Margin="10,33,0,0" VerticalAlignment="Top" Width="232" Value="40"/>
+                        <Separator HorizontalAlignment="Left" Height="5" Margin="10,59,0,0" VerticalAlignment="Top" Width="232"/>
+                        <Slider HorizontalAlignment="Left" Margin="10,3.75,0,0" VerticalAlignment="Top" Width="232" Grid.Row="1"/>
+                        <Slider HorizontalAlignment="Left" Margin="10,119.75,0,10" Orientation="Vertical" Value="-1" Grid.Row="1"/>
+                        <Slider HorizontalAlignment="Left" Margin="33,119.75,0,10" Orientation="Vertical" TickPlacement="TopLeft" Value="5" Grid.Row="1"/>
+                        <Slider HorizontalAlignment="Left" Margin="62,119.75,0,10" Orientation="Vertical" TickPlacement="Both" Value="3" Grid.Row="1"/>
+                        <Slider HorizontalAlignment="Left" Margin="97,119.75,0,10" Orientation="Vertical" TickPlacement="BottomRight" Value="7" Grid.Row="1"/>
+                        <Slider HorizontalAlignment="Left" Margin="10,26.75,0,0" VerticalAlignment="Top" Width="232" TickPlacement="TopLeft" Grid.Row="1"/>
+                        <Slider HorizontalAlignment="Left" Margin="10,55.75,0,0" VerticalAlignment="Top" Width="232" TickPlacement="Both" Grid.Row="1"/>
+                        <Slider HorizontalAlignment="Left" Margin="10,90.75,0,0" VerticalAlignment="Top" Width="232" TickPlacement="BottomRight" Grid.Row="1"/>
+
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Tab D"/>
+                <TabItem Header="Tab E"/>
+            </TabControl>
+
+        </Grid>
     </Grid>
 </Window>
