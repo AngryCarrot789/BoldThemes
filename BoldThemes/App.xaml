@@ -1,12 +1,12 @@
-﻿<Application x:Class="BoldThemes.App"
+﻿<Application x:Class="REghZyFramework.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:BoldThemes"
+             xmlns:local="clr-namespace:REghZyFramework"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Themes/VeryDarkTheme.xaml"/>
+                <ResourceDictionary Source="Themes/RedBlackTheme.xaml"/>
                 <ResourceDictionary Source="Themes/ControlColours.xaml"/>
                 <ResourceDictionary Source="Themes/Controls.xaml"/>
             </ResourceDictionary.MergedDictionaries>

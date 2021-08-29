@@ -2,19 +2,19 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Color x:Key="REghZyColour.Foreground.Static"       R="240" G="240" B="240" A="255"/>
     <Color x:Key="REghZyColour.Foreground.Disabled"     R="190" G="190" B="190" A="255"/>
-    <Color x:Key="REghZyColour.Glyth.Static"            R="220" G="220" B="220" A="255"/>
-    <Color x:Key="REghZyColour.Glyth.Disabled"          R="180" G="180" B="180" A="255"/>
-    <Color x:Key="REghZyColour.Glyth.MouseOver"         R="250" G="250" B="250" A="255"/>
-    <Color x:Key="REghZyColour.Glyth.MouseDown"         R="235" G="235" B="235" A="255"/>
-    <Color x:Key="REghZyColour.Glyth.Selected"          R="228" G="228" B="228" A="255"/>
-    <Color x:Key="REghZyColour.Glyth.Selected.Inactive" R="218" G="218" B="218" A="255"/>
+    <Color x:Key="REghZyColour.Glyph.Static"            R="220" G="220" B="220" A="255"/>
+    <Color x:Key="REghZyColour.Glyph.Disabled"          R="180" G="180" B="180" A="255"/>
+    <Color x:Key="REghZyColour.Glyph.MouseOver"         R="250" G="250" B="250" A="255"/>
+    <Color x:Key="REghZyColour.Glyph.MouseDown"         R="235" G="235" B="235" A="255"/>
+    <Color x:Key="REghZyColour.Glyph.Selected"          R="228" G="228" B="228" A="255"/>
+    <Color x:Key="REghZyColour.Glyph.Selected.Inactive" R="218" G="218" B="218" A="255"/>
 
-    <Color x:Key="REghZyColour.ColourfulGlyth.Static"            R="50" G="50" B="200" A="255"/>
-    <Color x:Key="REghZyColour.ColourfulGlyth.Disabled"          R="50" G="40" B="180" A="255"/>
-    <Color x:Key="REghZyColour.ColourfulGlyth.MouseOver"         R="40" G="30" B="220" A="255"/>
-    <Color x:Key="REghZyColour.ColourfulGlyth.MouseDown"         R="50" G="40" B="210" A="255"/>
-    <Color x:Key="REghZyColour.ColourfulGlyth.Selected"          R="30" G="50" B="215" A="255"/>
-    <Color x:Key="REghZyColour.ColourfulGlyth.Selected.Inactive" R="30" G="40" B="210" A="255"/>
+    <Color x:Key="REghZyColour.ColourfulGlyph.Static"            R="50" G="40" B="200" A="255"/>
+    <Color x:Key="REghZyColour.ColourfulGlyph.Disabled"          R="50" G="30" B="180" A="255"/>
+    <Color x:Key="REghZyColour.ColourfulGlyph.MouseOver"         R="40" G="20" B="220" A="255"/>
+    <Color x:Key="REghZyColour.ColourfulGlyph.MouseDown"         R="50" G="30" B="210" A="255"/>
+    <Color x:Key="REghZyColour.ColourfulGlyph.Selected"          R="30" G="40" B="215" A="255"/>
+    <Color x:Key="REghZyColour.ColourfulGlyph.Selected.Inactive" R="30" G="30" B="210" A="255"/>
 
     <Color x:Key="REghZyColour.Deep.1.Background.Static" R="20" G="20" B="20" A="255"/>
     <Color x:Key="REghZyColour.Deep.2.Background.Static" R="24" G="24" B="24" A="255"/>
@@ -79,11 +79,16 @@
 
     <SolidColorBrush x:Key="REghZyBrush.Foreground.Static"                      Color="{StaticResource REghZyColour.Foreground.Static}"/>
     <SolidColorBrush x:Key="REghZyBrush.Foreground.Disabled"                    Color="{StaticResource REghZyColour.Foreground.Disabled}"/>
-    <SolidColorBrush x:Key="REghZyBrush.Glyth.Static"                           Color="{StaticResource REghZyColour.Glyth.Static}"/>
-    <SolidColorBrush x:Key="REghZyBrush.Glyth.Disabled"                         Color="{StaticResource REghZyColour.Glyth.Disabled}"/>
-    <SolidColorBrush x:Key="REghZyBrush.Glyth.MouseOver"                        Color="{StaticResource REghZyColour.Glyth.MouseOver}"/>
-    <SolidColorBrush x:Key="REghZyBrush.Glyth.MouseDown"                        Color="{StaticResource REghZyColour.Glyth.MouseDown}"/>
-    <SolidColorBrush x:Key="REghZyBrush.Glyth.Selected"                         Color="{StaticResource REghZyColour.Glyth.Selected}"/>
+    <SolidColorBrush x:Key="REghZyBrush.Glyph.Static"                           Color="{StaticResource REghZyColour.Glyph.Static}"/>
+    <SolidColorBrush x:Key="REghZyBrush.Glyph.Disabled"                         Color="{StaticResource REghZyColour.Glyph.Disabled}"/>
+    <SolidColorBrush x:Key="REghZyBrush.Glyph.MouseOver"                        Color="{StaticResource REghZyColour.Glyph.MouseOver}"/>
+    <SolidColorBrush x:Key="REghZyBrush.Glyph.MouseDown"                        Color="{StaticResource REghZyColour.Glyph.MouseDown}"/>
+    <SolidColorBrush x:Key="REghZyBrush.Glyph.Selected"                         Color="{StaticResource REghZyColour.Glyph.Selected}"/>
+    <SolidColorBrush x:Key="REghZyBrush.ColourfulGlyph.Static"                  Color="{StaticResource REghZyColour.ColourfulGlyph.Static}"/>
+    <SolidColorBrush x:Key="REghZyBrush.ColourfulGlyph.Disabled"                Color="{StaticResource REghZyColour.ColourfulGlyph.Disabled}"/>
+    <SolidColorBrush x:Key="REghZyBrush.ColourfulGlyph.MouseOver"               Color="{StaticResource REghZyColour.ColourfulGlyph.MouseOver}"/>
+    <SolidColorBrush x:Key="REghZyBrush.ColourfulGlyph.MouseDown"               Color="{StaticResource REghZyColour.ColourfulGlyph.MouseDown}"/>
+    <SolidColorBrush x:Key="REghZyBrush.ColourfulGlyph.Selected"                Color="{StaticResource REghZyColour.ColourfulGlyph.Selected}"/>
     <SolidColorBrush x:Key="REghZyBrush.Deep.1.Background"                      Color="{StaticResource REghZyColour.Deep.1.Background.Static}"/>
     <SolidColorBrush x:Key="REghZyBrush.Deep.2.Background"                      Color="{StaticResource REghZyColour.Deep.2.Background.Static}"/>
     <SolidColorBrush x:Key="REghZyBrush.Deep.3.Background"                      Color="{StaticResource REghZyColour.Deep.3.Background.Static}"/>

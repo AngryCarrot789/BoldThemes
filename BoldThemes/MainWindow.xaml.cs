@@ -12,14 +12,34 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using REghZyFramework.Themes;
 
-namespace BoldThemes {
+namespace REghZyFramework {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+        }
+
+        private void ChangeTheme(object sender, RoutedEventArgs e) {
+            ThemeType theme;
+            switch (int.Parse(((MenuItem)sender).Uid)) {
+                case 0:
+                    theme = ThemeType.Light;
+                    break;
+                case 1:
+                    theme = ThemeType.Dark;
+                    break;
+                case 2:
+                    theme = ThemeType.Red;
+                    break;
+                default:
+                    return;
+            }
+
+            ThemesController.SetTheme(theme);
         }
     }
 }
