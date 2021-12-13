@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace REghZyFramework.Properties {
+namespace DragonJetzFramework.Properties {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>

@@ -1,4 +1,4 @@
-﻿namespace REghZyFramework.Themes {
+﻿namespace DragonJetzFramework.Themes {
     public enum ThemeType {
         Dark,
         Red,
